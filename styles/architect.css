@@ -19,11 +19,8 @@ header{
     align-items: center;
 }
 .container {
-    width: 1920px;
-    height: 1322px;
     justify-content: center;
     background-color: rgba(255, 144, 14, 0.1);
-
 }
 
 .nav-container {
@@ -38,7 +35,9 @@ header{
     font-weight: 700px;
     color: #080707;
 }
-
+.nav-title:hover{
+    color: rgb(143, 17, 17);
+}
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -54,14 +53,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    font-weight: 600px;
     color: #ea1538;
     border: 1px solid #ea1538;
     transform-origin: 0;
 }
 
 .fa-solid {
-    color: #f39e3c;
+    color: #38342f;
 }
+
+
 
 /*---- banner container styles ----*/
 .banner-section {
@@ -71,8 +73,6 @@ nav ul li a:hover {
 }
 
 .banner-container {
-    width: 862px;
-    height: 225px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -84,7 +84,11 @@ nav ul li a:hover {
     color: #0a0a0a;
     justify-content: center;
 }
-
+.banner-title:hover{
+    color: rgb(143, 17, 17);
+    border: 2px solid rgb(4, 47, 115);
+    border-radius: 10px;
+}
 .banner-details {
     font-weight: 400px;
     font-size: 16px;
@@ -92,7 +96,7 @@ nav ul li a:hover {
     padding-top: 30px;
 }
 .button{
-    margin-top: 35px;
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +115,7 @@ nav ul li a:hover {
 }
 
 .btn-primary:hover{
-    border: 1px solid skyblue;
+    border: 3px solid rgb(4, 47, 115);
 }
 .image {
     display: flex;
@@ -124,7 +128,6 @@ nav ul li a:hover {
 .image img {
     padding: 50px 240px 30px 240px;
 }
-
 /*------ Main section styles ------*/
 main{
     display: flex;
@@ -135,6 +138,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 85px;
+    gap:73px;
 }
 
 .team-images {
@@ -145,12 +149,13 @@ main{
 }
 
 .team-images img {
-    width: 342px;
-    height: 342px;
+    width:100%;
+    height:100%;
 }
-
+.team-images img:hover{
+    border: 3px solid rgb(4, 47, 115);
+}
 .list-container {
-    margin-left: 73px;
     width: 537px;
     height: 304px;
 }
@@ -203,12 +208,13 @@ main{
     border-left: 5px solid rgb(251, 84, 23);
     padding-left: 21px;
 }
-
+.container-title:hover{
+    color: rgb(143, 17, 17);
+}
 .container-detail {
     font-size: 17px;
     font-weight: 400px;
     color: #605f5f;
-
     margin: 30px 0px 35px 0px;
 }
 
@@ -228,16 +234,13 @@ main{
     color: #000000;
     margin-bottom: 10px;
 }
-
+.architect-title:hover{
+    color: rgb(143, 17, 17);
+}
 .architect-details {
     font-size: 18px;
     font-weight: 400px;
     color: #4a4747;
-}
-
-.architect-image {
-    width: 708px;
-    height: 982px;
 }
 
 .experience-btn {
@@ -264,7 +267,9 @@ main{
     font-size: 25px;
     font-weight: 500px;
 }
-
+.btn-secondary:hover{
+    border: 3px solid rgb(4, 47, 115);
+}
 /*----- Some facts section styles ------*/
 .figure {
     display: flex;
@@ -278,7 +283,9 @@ main{
     font-weight: 700px;
     color: #000000;
 }
-
+.figure-title:hover{
+    color: rgb(143, 17, 17);
+}
 .figure-description {
     font-size: 17px;
     font-weight: 400px;
@@ -320,7 +327,9 @@ main{
     font-size: 20px;
     font-weight: 600px;
 }
-
+.blog:hover{
+    border: 3px solid rgb(4, 47, 115);
+}
 /*----- Sponsors section styles -----*/
 
 .sponsors {
@@ -336,7 +345,9 @@ main{
     font-weight: 700px;
 
 }
-
+.sponsors-title:hover{
+    color: rgb(143, 17, 17);
+}
 .sponsors-description {
     font-size: 17px;
     font-weight: 400px;
@@ -354,7 +365,9 @@ main{
     color: black;
     padding-right: 150px;
 }
-
+.sponsors-logo img:hover{
+    font-size: ;
+}
 /*---- footer styles ----*/
 footer {
     display: flex;
@@ -373,4 +386,84 @@ footer {
     border: 1px solid orangered;
     border-radius: 10px;
     border: none;
+}
+.footer-title:hover{
+    color: rgb(143, 17, 17);
+}
+
+/* responsive section */
+@media only screen and (max-width:576px) {
+    *{
+        padding: 2px;
+    }
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+    .image{
+        padding: 0;
+        margin: auto
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quick-list-info{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .list-container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .team-images img{
+        
+    }
+    button{
+        display: flex;
+        justify-content: center;
+    }
+    .architect-section{
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .architect-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .experience-btn{
+        padding: 0;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .figure{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+    .blogs{
+        flex-direction: column;
+    }
+    .sponsors-logo img{
+        flex-direction: column;
+        padding-right: 0;
+        margin-top: 30px;
+    }
 }
