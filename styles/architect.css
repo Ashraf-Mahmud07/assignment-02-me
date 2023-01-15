@@ -13,9 +13,12 @@
 body {
     margin: auto;
 }
-
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
-    margin: auto;
     width: 1920px;
     height: 1322px;
     justify-content: center;
@@ -88,7 +91,12 @@ nav ul li a:hover {
     color: #534e4e;
     padding-top: 30px;
 }
-
+.button{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn-primary {
     color: #ffffff;
     background: #FF900E;
@@ -99,11 +107,12 @@ nav ul li a:hover {
     padding: 20px 25px;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
-/* .btn-primary:hover{
+.btn-primary:hover{
     border: 1px solid skyblue;
-} */
+}
 .image {
     display: flex;
     flex-direction: column;
@@ -117,6 +126,10 @@ nav ul li a:hover {
 }
 
 /*------ Main section styles ------*/
+main{
+    display: flex;
+    flex-direction: column;
+}
 .quick-list-info {
     display: flex;
     justify-content: center;
@@ -254,11 +267,10 @@ nav ul li a:hover {
 
 /*----- Some facts section styles ------*/
 .figure {
-    margin-top: 130px;
-    margin-left: 240px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: -820px;
 }
 
 .figure-title {
